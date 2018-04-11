@@ -1,0 +1,8 @@
+security:
+    access_control:
+        - { path: ^/gdpr/, role: [ROLE_SUPER_ADMIN] }
+
+doctrine:
+    dbal:
+        types:
+            personal_data:  SpecShaper\GdprBundle\Types\PersonalDataType
