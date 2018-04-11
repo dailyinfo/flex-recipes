@@ -1,10 +1,4 @@
 {
-  "container": {
-    "encrypt_key": "%env(GDPR_ENCRYPT_KEY)%"
-  },
-  "env": {
-    "GDPR_ENCRYPT_KEY": "%generate(secret, 32)%"
-  },
   "bundles": {
     "SpecShaper\\GdprBundle\\SpecShaperGdprBundle": ["all"]
   }
